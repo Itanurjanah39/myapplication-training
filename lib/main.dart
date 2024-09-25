@@ -31,8 +31,8 @@ class MyApp extends StatelessWidget {
           ),
           ),
         ),
-        body: SingleChildScrollView(
-          child: const Column(
+        body: const SingleChildScrollView(
+          child: Column(
             children: [
               ImageSection(image: 'https://picsum.photos/250?image=9'),
               TitleSection(name: "Taman Mini", location: "eque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"),

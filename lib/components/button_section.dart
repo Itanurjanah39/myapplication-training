@@ -5,7 +5,7 @@ class ButtonSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color color = Colors.blue;
+    Color color = Colors.blue;
     return SizedBox(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,7 +41,7 @@ class ButtonWithText extends StatelessWidget {
           icon,
           color : color
         ),
-        Padding(padding: EdgeInsets.only(top: 8),
+         Padding(padding: const EdgeInsets.only(top: 8),
         child:  Text(label,
          style: TextStyle(
           fontSize: 12,
