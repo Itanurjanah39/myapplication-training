@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:my_application/main_import.dart';
 
 class ImageSection extends StatelessWidget {
   const ImageSection({
@@ -10,10 +10,23 @@ class ImageSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
+    final screenSize = ScreenSizeHelper(context);
+
+    return screenSize.isLandscapeScreen
+    ?
+    Image.asset(
       image,
-      width: 600.0,
-      height:200.0,
+      width: screenSize.screenWidth * 0.3,
+      height: screenSize.screenHeight,
+      fit: BoxFit.contain,
+      
+    )
+    : 
+    Image.asset(
+      image,
+      width: screenSize.screenWidth,
+      height: screenSize.screenHeight * 0.2,
+      fit: BoxFit.fill,
     );
   }
 }

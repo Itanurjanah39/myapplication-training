@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:my_application/main_import.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({
@@ -24,14 +24,14 @@ final String location;
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     name, 
-                    style: const TextStyle(
+                    style: GoogleFonts.sofadiOne(
                     fontWeight: FontWeight.bold
                   ),
                   ),
                 ),
                 Text(
                     location,
-                    style: const TextStyle(
+                    style: GoogleFonts.nunito(
                       color: Colors.grey,
                     ),
                   ),
